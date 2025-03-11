@@ -6,9 +6,9 @@ project "beatrice"
    kind "ConsoleApp"
    language "C++"
    targetdir "bin/%{cfg.buildcfg}"
-   --includedirs { "./dep/include/"}
-   --libdirs { "./dep/lib/" }
-   --links { "lunomath" }
+   includedirs { "./dep/include/"}
+   libdirs { "./dep/lib/" }
+   links { "lunomath" }
    files { "./src/**.h", "./src/**.hpp", "./src/**.cpp" }
 
    filter "configurations:Debug"
